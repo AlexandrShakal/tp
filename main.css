@@ -1,0 +1,134 @@
+body{
+    height: 100%;
+    width: 100%;
+    
+}
+.slideUP{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    background: chartreuse;
+    top: 50%;
+    left: 50%;
+    margin: -20px;
+    font-size: 100px;
+    animation: rot 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+}
+
+@keyframes rot {
+    0% {
+            transform: rotate(0deg)
+                       translate(-200px)
+                       rotate(0deg);
+            background: purple;
+            border-radius: 0%;
+    }
+	50%{
+		border-radius: 60%;
+		background: red;
+	}
+    100% {
+            transform: rotate(360deg)
+                       translate(-200px)
+                       rotate(-360deg);
+            background: purple;
+            border-radius: 0%;
+    }
+}
+.slideDown{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    background: darkorchid;
+    top: 50%;
+    left: 50%;
+    animation: circle 3s ;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+}
+@keyframes circle {
+    0% {
+            transform: rotate(0deg)
+                       translate(200px)
+                       rotate(0deg);
+            background: darkkhaki;
+            border-radius: 0%;
+    }
+	50%{
+		border-radius: 60%;
+		background: green;
+	}
+    100% {
+            transform: rotate(360deg)
+                       translate(200px)
+                       rotate(-360deg);
+            background: darkkhaki;
+            border-radius: 0%;
+    }
+}
+.slideLeft{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    background: burlywood;
+    top: 50%;
+    left: 50%;
+    animation: left 3s ;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+}
+@keyframes left {
+    0% {
+            transform: rotate(0deg)
+                       translate(0,200px)
+                       rotate(0deg);
+                       background: aqua;
+                       border-radius: 0%;
+    }
+	50%{
+		border-radius: 60%;
+		background: purple;
+        
+	}
+    100% {
+            transform: rotate(360deg)
+                       translate(0,200px)
+                       rotate(-360deg);
+                       background: aqua;
+                       border-radius: 0%;
+    }
+}
+.slideRight{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    background: darkorchid;
+    top: 50%;
+    left: 50%;
+    animation: right 3s ;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+}
+@keyframes right {
+    0% {
+            transform: rotate(0deg)
+                       translate(0,-200px)
+                       rotate(0deg);
+                       background: red;
+                       border-radius: 0%;
+    }
+	50%{
+		border-radius: 60%;
+		background: orange;
+	}
+    100% {
+            transform: rotate(360deg)
+                       translate(0,-200px)
+                       rotate(-360deg);
+                       background: red;
+                       border-radius: 0%;
+    }
+}
+
